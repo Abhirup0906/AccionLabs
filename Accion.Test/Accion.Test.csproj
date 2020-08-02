@@ -7,13 +7,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="3.1.6" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="3.1.6" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
     <PackageReference Include="nunit" Version="3.12.0" />
     <PackageReference Include="NUnit3TestAdapter" Version="3.15.1" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.4.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Accion.Business\Accion.Business.csproj" />
+    <ProjectReference Include="..\Accion.EmployeeMgmt\Accion.EmployeeMgmt.csproj" />
     <ProjectReference Include="..\Accion.Logical\Accion.Logical.csproj" />
+    <ProjectReference Include="..\Accion.Model\Accion.Model.csproj" />
   </ItemGroup>
 
 </Project>
